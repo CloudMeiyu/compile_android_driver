@@ -1,0 +1,78 @@
+[2025-08-21 20:06:46.380] [sharedprocess] [info] Starting worker process with pid 409474 (type: fileWatcher, window: 1).
+[2025-08-21 20:06:51.021] [sharedprocess] [error] RequestService#request (browser) - error https://az764295.vo.msecnd.net/extensions/marketplace.json {}
+[2025-08-21 20:07:00.340] [sharedprocess] [info] Worker process with pid 409474 terminated normally (type: fileWatcher, window: 1).
+[2025-08-21 20:07:01.049] [sharedprocess] [info] Starting worker process with pid 409594 (type: fileWatcher, window: 1).
+[2025-08-21 20:07:17.005] [sharedprocess] [info] Getting Manifest... redhat.vscode-xml
+[2025-08-21 20:07:17.005] [sharedprocess] [info] Getting Manifest... vscjava.vscode-java-pack
+[2025-08-21 20:07:18.477] [sharedprocess] [info] Installing extension: redhat.vscode-xml
+[2025-08-21 20:07:19.727] [sharedprocess] [info] Installing extension: vscjava.vscode-java-pack
+[2025-08-21 20:07:21.857] [sharedprocess] [info] Downloaded extension: redhat.vscode-xml /root/Desktop/kernel_workspace/kernel_platform/rwProcMem33/rwProcMem33Module/rwProcMem_module/=~/.vscode-root/CachedExtensionVSIXs/redhat.vscode-xml-0.29.0-linux-x64
+[2025-08-21 20:07:22.933] [sharedprocess] [info] Downloaded extension: vscjava.vscode-java-pack /root/Desktop/kernel_workspace/kernel_platform/rwProcMem33/rwProcMem33Module/rwProcMem_module/=~/.vscode-root/CachedExtensionVSIXs/vscjava.vscode-java-pack-0.26.0
+[2025-08-21 20:07:23.000] [sharedprocess] [info] Extracted extension to /root/.vscode/extensions/.7b9f0e0d-9010-4ce2-9b25-7fd38ce7d638: redhat.vscode-xml
+[2025-08-21 20:07:23.003] [sharedprocess] [info] Renamed to /root/.vscode/extensions/redhat.vscode-xml-0.29.0-linux-x64
+[2025-08-21 20:07:23.005] [sharedprocess] [info] Extracting completed. redhat.vscode-xml
+[2025-08-21 20:07:23.010] [sharedprocess] [info] Extension installed successfully: redhat.vscode-xml
+[2025-08-21 20:07:23.218] [sharedprocess] [info] Extracted extension to /root/.vscode/extensions/.6866d1ea-fef4-4aa5-b3f8-bdfaaf447085: vscjava.vscode-java-pack
+[2025-08-21 20:07:23.221] [sharedprocess] [info] Renamed to /root/.vscode/extensions/vscjava.vscode-java-pack-0.26.0
+[2025-08-21 20:07:23.223] [sharedprocess] [info] Extracting completed. vscjava.vscode-java-pack
+[2025-08-21 20:07:23.225] [sharedprocess] [info] Extension installed successfully: vscjava.vscode-java-pack
+[2025-08-21 20:12:03.898] [sharedprocess] [error] RequestService#request (browser) - error https://az764295.vo.msecnd.net/extensions/marketplace.json {}
+[2025-08-21 20:15:50.938] [sharedprocess] [info] Worker process with pid 409594 terminated normally (type: fileWatcher, window: 1).
+[2025-08-21 20:15:51.600] [sharedprocess] [info] Starting worker process with pid 413499 (type: fileWatcher, window: 1).
+[2025-08-21 20:20:54.964] [sharedprocess] [error] RequestService#request (browser) - error https://az764295.vo.msecnd.net/extensions/marketplace.json {}
+[2025-08-21 20:25:55.032] [sharedprocess] [error] RequestService#request (browser) - error https://az764295.vo.msecnd.net/extensions/marketplace.json {}
+[2025-08-21 20:30:55.066] [sharedprocess] [error] RequestService#request (browser) - error https://az764295.vo.msecnd.net/extensions/marketplace.json {}
+[2025-08-21 20:35:55.097] [sharedprocess] [error] RequestService#request (browser) - error https://az764295.vo.msecnd.net/extensions/marketplace.json {}
+[2025-08-21 20:40:55.128] [sharedprocess] [error] RequestService#request (browser) - error https://az764295.vo.msecnd.net/extensions/marketplace.json {}
+[2025-08-21 20:45:55.160] [sharedprocess] [error] RequestService#request (browser) - error https://az764295.vo.msecnd.net/extensions/marketplace.json {}
+[2025-08-21 20:50:55.193] [sharedprocess] [error] RequestService#request (browser) - error https://az764295.vo.msecnd.net/extensions/marketplace.json {}
+[2025-08-21 20:55:55.231] [sharedprocess] [error] RequestService#request (browser) - error https://az764295.vo.msecnd.net/extensions/marketplace.json {}
+[2025-08-21 21:00:55.265] [sharedprocess] [error] RequestService#request (browser) - error https://az764295.vo.msecnd.net/extensions/marketplace.json {}
+[2025-08-21 21:05:55.296] [sharedprocess] [error] RequestService#request (browser) - error https://az764295.vo.msecnd.net/extensions/marketplace.json {}
+[2025-08-21 21:10:55.327] [sharedprocess] [error] RequestService#request (browser) - error https://az764295.vo.msecnd.net/extensions/marketplace.json {}
+[2025-08-21 21:15:55.358] [sharedprocess] [error] RequestService#request (browser) - error https://az764295.vo.msecnd.net/extensions/marketplace.json {}
+[2025-08-21 21:20:55.390] [sharedprocess] [error] RequestService#request (browser) - error https://az764295.vo.msecnd.net/extensions/marketplace.json {}
+[2025-08-21 21:25:55.425] [sharedprocess] [error] RequestService#request (browser) - error https://az764295.vo.msecnd.net/extensions/marketplace.json {}
+[2025-08-21 21:30:55.463] [sharedprocess] [error] RequestService#request (browser) - error https://az764295.vo.msecnd.net/extensions/marketplace.json {}
+[2025-08-21 21:35:55.495] [sharedprocess] [error] RequestService#request (browser) - error https://az764295.vo.msecnd.net/extensions/marketplace.json {}
+[2025-08-21 21:40:55.526] [sharedprocess] [error] RequestService#request (browser) - error https://az764295.vo.msecnd.net/extensions/marketplace.json {}
+[2025-08-21 21:45:55.558] [sharedprocess] [error] RequestService#request (browser) - error https://az764295.vo.msecnd.net/extensions/marketplace.json {}
+[2025-08-21 21:50:55.598] [sharedprocess] [error] RequestService#request (browser) - error https://az764295.vo.msecnd.net/extensions/marketplace.json {}
+[2025-08-21 21:55:55.633] [sharedprocess] [error] RequestService#request (browser) - error https://az764295.vo.msecnd.net/extensions/marketplace.json {}
+[2025-08-21 22:00:55.669] [sharedprocess] [error] RequestService#request (browser) - error https://az764295.vo.msecnd.net/extensions/marketplace.json {}
+[2025-08-21 22:05:55.712] [sharedprocess] [error] RequestService#request (browser) - error https://az764295.vo.msecnd.net/extensions/marketplace.json {}
+[2025-08-21 22:10:55.755] [sharedprocess] [error] RequestService#request (browser) - error https://az764295.vo.msecnd.net/extensions/marketplace.json {}
+[2025-08-21 22:15:55.788] [sharedprocess] [error] RequestService#request (browser) - error https://az764295.vo.msecnd.net/extensions/marketplace.json {}
+[2025-08-21 22:20:55.820] [sharedprocess] [error] RequestService#request (browser) - error https://az764295.vo.msecnd.net/extensions/marketplace.json {}
+[2025-08-21 22:25:55.866] [sharedprocess] [error] RequestService#request (browser) - error https://az764295.vo.msecnd.net/extensions/marketplace.json {}
+[2025-08-21 22:30:55.915] [sharedprocess] [error] RequestService#request (browser) - error https://az764295.vo.msecnd.net/extensions/marketplace.json {}
+[2025-08-21 22:35:55.953] [sharedprocess] [error] RequestService#request (browser) - error https://az764295.vo.msecnd.net/extensions/marketplace.json {}
+[2025-08-21 22:40:55.990] [sharedprocess] [error] RequestService#request (browser) - error https://az764295.vo.msecnd.net/extensions/marketplace.json {}
+[2025-08-21 22:45:56.878] [sharedprocess] [error] RequestService#request (browser) - error https://az764295.vo.msecnd.net/extensions/marketplace.json {}
+[2025-08-21 22:50:57.878] [sharedprocess] [error] RequestService#request (browser) - error https://az764295.vo.msecnd.net/extensions/marketplace.json {}
+[2025-08-21 22:55:58.878] [sharedprocess] [error] RequestService#request (browser) - error https://az764295.vo.msecnd.net/extensions/marketplace.json {}
+[2025-08-21 23:00:59.879] [sharedprocess] [error] RequestService#request (browser) - error https://az764295.vo.msecnd.net/extensions/marketplace.json {}
+[2025-08-21 23:06:00.879] [sharedprocess] [error] RequestService#request (browser) - error https://az764295.vo.msecnd.net/extensions/marketplace.json {}
+[2025-08-21 23:11:01.879] [sharedprocess] [error] RequestService#request (browser) - error https://az764295.vo.msecnd.net/extensions/marketplace.json {}
+[2025-08-21 23:16:02.879] [sharedprocess] [error] RequestService#request (browser) - error https://az764295.vo.msecnd.net/extensions/marketplace.json {}
+[2025-08-21 23:21:08.878] [sharedprocess] [error] RequestService#request (browser) - error https://az764295.vo.msecnd.net/extensions/marketplace.json {}
+[2025-08-21 23:26:09.880] [sharedprocess] [error] RequestService#request (browser) - error https://az764295.vo.msecnd.net/extensions/marketplace.json {}
+[2025-08-21 23:31:10.888] [sharedprocess] [error] RequestService#request (browser) - error https://az764295.vo.msecnd.net/extensions/marketplace.json {}
+[2025-08-21 23:36:11.889] [sharedprocess] [error] RequestService#request (browser) - error https://az764295.vo.msecnd.net/extensions/marketplace.json {}
+[2025-08-21 23:41:12.878] [sharedprocess] [error] RequestService#request (browser) - error https://az764295.vo.msecnd.net/extensions/marketplace.json {}
+[2025-08-21 23:46:13.879] [sharedprocess] [error] RequestService#request (browser) - error https://az764295.vo.msecnd.net/extensions/marketplace.json {}
+[2025-08-21 23:51:14.889] [sharedprocess] [error] RequestService#request (browser) - error https://az764295.vo.msecnd.net/extensions/marketplace.json {}
+[2025-08-21 23:56:15.879] [sharedprocess] [error] RequestService#request (browser) - error https://az764295.vo.msecnd.net/extensions/marketplace.json {}
+[2025-08-22 00:01:16.878] [sharedprocess] [error] RequestService#request (browser) - error https://az764295.vo.msecnd.net/extensions/marketplace.json {}
+[2025-08-22 00:06:17.879] [sharedprocess] [error] RequestService#request (browser) - error https://az764295.vo.msecnd.net/extensions/marketplace.json {}
+[2025-08-22 00:11:18.878] [sharedprocess] [error] RequestService#request (browser) - error https://az764295.vo.msecnd.net/extensions/marketplace.json {}
+[2025-08-22 00:16:19.896] [sharedprocess] [error] RequestService#request (browser) - error https://az764295.vo.msecnd.net/extensions/marketplace.json {}
+[2025-08-22 00:21:20.879] [sharedprocess] [error] RequestService#request (browser) - error https://az764295.vo.msecnd.net/extensions/marketplace.json {}
+[2025-08-22 00:26:21.879] [sharedprocess] [error] RequestService#request (browser) - error https://az764295.vo.msecnd.net/extensions/marketplace.json {}
+[2025-08-22 00:31:22.878] [sharedprocess] [error] RequestService#request (browser) - error https://az764295.vo.msecnd.net/extensions/marketplace.json {}
+[2025-08-22 00:36:23.888] [sharedprocess] [error] RequestService#request (browser) - error https://az764295.vo.msecnd.net/extensions/marketplace.json {}
+[2025-08-22 00:41:24.878] [sharedprocess] [error] RequestService#request (browser) - error https://az764295.vo.msecnd.net/extensions/marketplace.json {}
+[2025-08-22 00:46:25.878] [sharedprocess] [error] RequestService#request (browser) - error https://az764295.vo.msecnd.net/extensions/marketplace.json {}
+[2025-08-22 00:51:26.878] [sharedprocess] [error] RequestService#request (browser) - error https://az764295.vo.msecnd.net/extensions/marketplace.json {}
+[2025-08-22 00:56:27.879] [sharedprocess] [error] RequestService#request (browser) - error https://az764295.vo.msecnd.net/extensions/marketplace.json {}
+[2025-08-22 01:01:28.878] [sharedprocess] [error] RequestService#request (browser) - error https://az764295.vo.msecnd.net/extensions/marketplace.json {}

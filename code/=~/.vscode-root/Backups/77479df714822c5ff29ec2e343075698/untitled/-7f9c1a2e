@@ -1,0 +1,6 @@
+untitled:Untitled-1 {"typeId":""}
+# 编译配置
+make -j$(nproc) O=out LLVM=1 CROSS_COMPILE=aarch64-linux-gnu- gki_defconfig
+
+# 开始编译
+make -j$(nproc) O=out LLVM=1 CROSS_COMPILE=aarch64-linux-gnu-

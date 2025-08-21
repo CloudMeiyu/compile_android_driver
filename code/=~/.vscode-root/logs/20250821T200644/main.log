@@ -1,0 +1,9 @@
+[2025-08-21 20:06:44.536] [main] [info] update#setState idle
+[2025-08-21 20:06:45.666] [main] [info] Starting extension host with pid 409438 (fork() took 33 ms).
+[2025-08-21 20:07:00.346] [main] [info] Extension host with pid 409438 exited with code: 0, signal: null.
+[2025-08-21 20:07:01.048] [main] [info] Starting extension host with pid 409595 (fork() took 11 ms).
+[2025-08-21 20:07:14.541] [main] [info] update#setState checking for updates
+[2025-08-21 20:07:14.555] [main] [info] update#setState available for download
+[2025-08-21 20:15:50.942] [main] [info] Extension host with pid 409595 exited with code: 0, signal: null.
+[2025-08-21 20:15:51.598] [main] [info] Starting extension host with pid 413500 (fork() took 19 ms).
+[2025-08-21 22:51:01.883] [main] [info] Enabling inspect port on extension host with pid 413500.

@@ -1,0 +1,73 @@
+[2025-08-21 20:06:46.154] [renderer1] [warning] [redhat.vscode-xml]: Cannot register 'redhat.telemetry.enabled'. This property is already registered.
+[2025-08-21 20:06:46.154] [renderer1] [warning] [vscjava.vscode-maven]: Cannot register 'maven.executable.path'. This property is already registered.
+[2025-08-21 20:06:52.908] [renderer1] [error] RequestService#request (browser) - error https://vscodeexperiments.azureedge.net/experiments/vscode-experiments.json {}
+[2025-08-21 20:07:03.208] [renderer1] [error] RequestService#request (browser) - error https://vscodeexperiments.azureedge.net/experiments/vscode-experiments.json {}
+[2025-08-21 20:07:03.242] [renderer1] [warning] [redhat.fabric8-analytics]: Cannot register 'redhat.telemetry.enabled'. This property is already registered.
+[2025-08-21 20:07:03.242] [renderer1] [warning] [redhat.fabric8-analytics]: Cannot register 'maven.executable.path'. This property is already registered.
+[2025-08-21 20:15:52.924] [renderer1] [warning] [redhat.fabric8-analytics]: Cannot register 'redhat.telemetry.enabled'. This property is already registered.
+[2025-08-21 20:15:52.925] [renderer1] [warning] [redhat.fabric8-analytics]: Cannot register 'maven.executable.path'. This property is already registered.
+[2025-08-21 20:15:53.954] [renderer1] [error] RequestService#request (browser) - error https://vscodeexperiments.azureedge.net/experiments/vscode-experiments.json {}
+[2025-08-21 20:19:10.014] [renderer1] [error] Git error
+[2025-08-21 20:20:06.589] [renderer1] [error] Git error
+[2025-08-21 20:20:08.857] [renderer1] [error] Git error
+[2025-08-21 20:20:35.198] [renderer1] [error] Git error
+[2025-08-21 20:20:40.221] [renderer1] [error] Git error
+[2025-08-21 20:20:41.445] [renderer1] [error] Git error
+[2025-08-21 22:51:03.087] [renderer1] [info] UNRESPONSIVE extension host: starting to profile NOW
+[2025-08-21 22:51:57.011] [renderer1] [info] UNRESPONSIVE extension host: starting to profile NOW
+[2025-08-21 22:54:04.027] [renderer1] [info] UNRESPONSIVE extension host: starting to profile NOW
+[2025-08-21 22:54:40.022] [renderer1] [info] UNRESPONSIVE extension host: starting to profile NOW
+[2025-08-21 22:55:47.024] [renderer1] [info] UNRESPONSIVE extension host: starting to profile NOW
+[2025-08-21 22:56:57.038] [renderer1] [info] UNRESPONSIVE extension host: starting to profile NOW
+[2025-08-21 23:01:04.033] [renderer1] [info] UNRESPONSIVE extension host: starting to profile NOW
+[2025-08-21 23:01:57.011] [renderer1] [info] UNRESPONSIVE extension host: starting to profile NOW
+[2025-08-21 23:06:05.009] [renderer1] [info] UNRESPONSIVE extension host: starting to profile NOW
+[2025-08-21 23:06:57.012] [renderer1] [info] UNRESPONSIVE extension host: starting to profile NOW
+[2025-08-21 23:11:06.014] [renderer1] [info] UNRESPONSIVE extension host: starting to profile NOW
+[2025-08-21 23:11:58.010] [renderer1] [info] UNRESPONSIVE extension host: starting to profile NOW
+[2025-08-21 23:16:07.016] [renderer1] [info] UNRESPONSIVE extension host: starting to profile NOW
+[2025-08-21 23:16:58.038] [renderer1] [info] UNRESPONSIVE extension host: starting to profile NOW
+[2025-08-21 23:21:08.017] [renderer1] [info] UNRESPONSIVE extension host: starting to profile NOW
+[2025-08-21 23:21:58.008] [renderer1] [info] UNRESPONSIVE extension host: starting to profile NOW
+[2025-08-21 23:26:14.018] [renderer1] [info] UNRESPONSIVE extension host: starting to profile NOW
+[2025-08-21 23:26:58.007] [renderer1] [info] UNRESPONSIVE extension host: starting to profile NOW
+[2025-08-21 23:33:40.046] [renderer1] [info] UNRESPONSIVE extension host: starting to profile NOW
+[2025-08-21 23:34:52.045] [renderer1] [info] UNRESPONSIVE extension host: starting to profile NOW
+[2025-08-21 23:35:41.025] [renderer1] [info] UNRESPONSIVE extension host: starting to profile NOW
+[2025-08-21 23:36:59.008] [renderer1] [info] UNRESPONSIVE extension host: starting to profile NOW
+[2025-08-21 23:41:01.015] [renderer1] [info] UNRESPONSIVE extension host: starting to profile NOW
+[2025-08-21 23:41:59.012] [renderer1] [info] UNRESPONSIVE extension host: starting to profile NOW
+[2025-08-21 23:46:18.020] [renderer1] [info] UNRESPONSIVE extension host: starting to profile NOW
+[2025-08-21 23:46:59.012] [renderer1] [info] UNRESPONSIVE extension host: starting to profile NOW
+[2025-08-21 23:51:19.021] [renderer1] [info] UNRESPONSIVE extension host: starting to profile NOW
+[2025-08-21 23:51:40.017] [renderer1] [info] UNRESPONSIVE extension host: starting to profile NOW
+[2025-08-21 23:56:20.017] [renderer1] [info] UNRESPONSIVE extension host: starting to profile NOW
+[2025-08-21 23:56:40.018] [renderer1] [info] UNRESPONSIVE extension host: starting to profile NOW
+[2025-08-22 00:01:21.022] [renderer1] [info] UNRESPONSIVE extension host: starting to profile NOW
+[2025-08-22 00:01:41.017] [renderer1] [info] UNRESPONSIVE extension host: starting to profile NOW
+[2025-08-22 00:06:22.013] [renderer1] [info] UNRESPONSIVE extension host: starting to profile NOW
+[2025-08-22 00:06:42.016] [renderer1] [info] UNRESPONSIVE extension host: starting to profile NOW
+[2025-08-22 00:11:23.022] [renderer1] [info] UNRESPONSIVE extension host: starting to profile NOW
+[2025-08-22 00:11:43.027] [renderer1] [info] UNRESPONSIVE extension host: starting to profile NOW
+[2025-08-22 00:21:25.023] [renderer1] [info] UNRESPONSIVE extension host: starting to profile NOW
+[2025-08-22 00:21:45.014] [renderer1] [info] UNRESPONSIVE extension host: starting to profile NOW
+[2025-08-22 00:26:26.017] [renderer1] [info] UNRESPONSIVE extension host: starting to profile NOW
+[2025-08-22 00:26:46.019] [renderer1] [info] UNRESPONSIVE extension host: starting to profile NOW
+[2025-08-22 00:31:27.011] [renderer1] [info] UNRESPONSIVE extension host: starting to profile NOW
+[2025-08-22 00:31:47.008] [renderer1] [info] UNRESPONSIVE extension host: starting to profile NOW
+[2025-08-22 00:36:28.013] [renderer1] [info] UNRESPONSIVE extension host: starting to profile NOW
+[2025-08-22 00:36:48.011] [renderer1] [info] UNRESPONSIVE extension host: starting to profile NOW
+[2025-08-22 00:41:29.015] [renderer1] [info] UNRESPONSIVE extension host: starting to profile NOW
+[2025-08-22 00:41:34.885] [renderer1] [info] UNRESPONSIVE extension host: received responsive event and cancelling profiling session
+[2025-08-22 00:41:40.020] [renderer1] [info] UNRESPONSIVE extension host: starting to profile NOW
+[2025-08-22 00:46:30.011] [renderer1] [info] UNRESPONSIVE extension host: starting to profile NOW
+[2025-08-22 00:46:34.872] [renderer1] [info] UNRESPONSIVE extension host: received responsive event and cancelling profiling session
+[2025-08-22 00:46:40.015] [renderer1] [info] UNRESPONSIVE extension host: starting to profile NOW
+[2025-08-22 00:51:31.013] [renderer1] [info] UNRESPONSIVE extension host: starting to profile NOW
+[2025-08-22 00:51:34.872] [renderer1] [info] UNRESPONSIVE extension host: received responsive event and cancelling profiling session
+[2025-08-22 00:51:40.011] [renderer1] [info] UNRESPONSIVE extension host: starting to profile NOW
+[2025-08-22 00:56:32.015] [renderer1] [info] UNRESPONSIVE extension host: starting to profile NOW
+[2025-08-22 00:56:34.872] [renderer1] [info] UNRESPONSIVE extension host: received responsive event and cancelling profiling session
+[2025-08-22 00:56:39.015] [renderer1] [info] UNRESPONSIVE extension host: starting to profile NOW
+[2025-08-22 01:01:33.022] [renderer1] [info] UNRESPONSIVE extension host: starting to profile NOW
+[2025-08-22 01:01:34.873] [renderer1] [info] UNRESPONSIVE extension host: received responsive event and cancelling profiling session
