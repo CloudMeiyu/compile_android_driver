@@ -161,19 +161,21 @@ jobs:
           echo "Target Arch: ${{ github.event.inputs.target_arch }}" >> gitee-sync/VERSION_INFO
           echo "Build Date: $(date)" >> gitee-sync/VERSION_INFO
           
+      # 配置 Git 安全目录
+      - name: Fix Git Safe Directory
+        run: git config --global --add safe.directory /github/workspace
+
       # 同步到 Gitee
       - name: Sync to Gitee
-        uses: wearerequired/git-mirror-action@master
+        uses: wearerequired/git-mirror-action@v1.0.0
         env:
           SSH_PRIVATE_KEY: ${{ secrets.GITEE_RSA_PRIVATE_KEY }}
         with:
           # 源仓库（当前仓库）
           source-repo: "git@github.com:${{ github.repository }}.git"
-          # 目标仓库（Gitee 仓库，请替换为您的 Gitee 用户名和仓库名）
+          # 目标仓库（Gitee 仓库）
           destination-repo: "git@gitee.com:a34664327/compile_android_driver.git"
-          # 只同步 gitee-sync 目录的内容
-          source-directory: "gitee-sync"
-          # 推送到 Gitee 的特定分支
-          destination-branch: "main"
-          # 强制推送，覆盖之前的构建
-          force: true
+          # 使用 args 传递额外参数
+          args: --source-branch=main --destination-branch=main --force
+          # 非干运行模式
+          dry-run: false
