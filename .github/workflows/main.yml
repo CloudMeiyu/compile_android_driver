@@ -121,3 +121,34 @@ jobs:
           name: kernel-driver-${{ github.event.inputs.target_arch }}
           path: |
             android-kernel/${{ env.OUTPUT_PATH }}
+            
+      # 新增步骤：准备同步到 Gitee
+      - name: Prepare Gitee sync
+        run: |
+          # 创建用于同步的目录结构
+          mkdir -p gitee-sync/${{ github.event.inputs.android_version }}-${{ github.event.inputs.kernel_version }}/${{ github.event.inputs.target_arch }}
+          # 复制构建产物
+          cp -r android-kernel/${{ env.OUTPUT_PATH }}/* gitee-sync/${{ github.event.inputs.android_version }}-${{ github.event.inputs.kernel_version }}/${{ github.event.inputs.target_arch }}/
+          # 添加版本信息文件
+          echo "Android Version: ${{ github.event.inputs.android_version }}" > gitee-sync/VERSION_INFO
+          echo "Kernel Version: ${{ github.event.inputs.kernel_version }}" >> gitee-sync/VERSION_INFO
+          echo "Driver Name: ${{ github.event.inputs.driver_name }}" >> gitee-sync/VERSION_INFO
+          echo "Target Arch: ${{ github.event.inputs.target_arch }}" >> gitee-sync/VERSION_INFO
+          echo "Build Date: $(date)" >> gitee-sync/VERSION_INFO
+          
+      # 新增步骤：同步到 Gitee
+      - name: Sync to Gitee
+        uses: wearerequired/git-mirror-action@master
+        env:
+          SSH_PRIVATE_KEY: ${{ secrets.GITEE_RSA_PRIVATE_KEY }}
+        with:
+          # 源仓库（当前仓库）
+          source-repo: "git@github.com:${{ github.repository }}.git"
+          # 目标仓库（Gitee 仓库，请替换为您的 Gitee 用户名和仓库名）
+          destination-repo: "git@gitee.com:a34664327/compile_android_driver.git"
+          # 只同步 gitee-sync 目录的内容
+          source-directory: "gitee-sync"
+          # 推送到 Gitee 的特定分支（可以自定义）
+          destination-branch: "main"
+          # 强制推送，覆盖之前的构建
+          force: true
