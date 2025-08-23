@@ -166,6 +166,7 @@ jobs:
         run: git config --global --add safe.directory /github/workspace
 
       # 同步到 Gitee
+# 同步到 Gitee
       - name: Sync to Gitee
         env:
           SSH_PRIVATE_KEY: ${{ secrets.GITEE_RSA_PRIVATE_KEY }}
@@ -178,6 +179,17 @@ jobs:
           # 添加主机到已知主机列表
           ssh-keyscan -H github.com >> ~/.ssh/known_hosts
           ssh-keyscan -H gitee.com >> ~/.ssh/known_hosts
+          
+          # 调试：显示 SSH 密钥信息
+          echo "SSH 密钥内容（前100字符）："
+          head -c 100 ~/.ssh/gitee_key
+          echo ""
+          echo "SSH 密钥文件权限："
+          ls -la ~/.ssh/gitee_key
+          
+          # 测试 SSH 连接
+          echo "测试 SSH 连接到 Gitee..."
+          GIT_SSH_COMMAND="ssh -i ~/.ssh/gitee_key -v" ssh -T git@gitee.com 2>&1 | head -20
           
           # 配置 Git 安全目录
           git config --global --add safe.directory /github/workspace
@@ -204,7 +216,8 @@ jobs:
           # 添加 Gitee 远程仓库
           git remote add gitee git@gitee.com:a34664327/compile_android_driver.git
           
-          # 强制推送到 Gitee
-          GIT_SSH_COMMAND="ssh -i ~/.ssh/gitee_key" git push -f gitee main
+          # 强制推送到 Gitee（使用详细输出）
+          echo "正在推送到 Gitee..."
+          GIT_SSH_COMMAND="ssh -i ~/.ssh/gitee_key -v" git push -f gitee main 2>&1
           
           echo "同步完成!"
