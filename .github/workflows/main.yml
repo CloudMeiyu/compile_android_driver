@@ -29,7 +29,32 @@ jobs:
         run: |
           mkdir kerneldriver
           mv ./code/*.h ./code/*.c ./code/Makefile kerneldriver/
-          
+
+      - name: Cache Android Kernel source
+        uses: actions/cache@v4
+        id: kernel-cache
+        with:
+          path: |
+            android-kernel/.repo
+            android-kernel/common
+            android-kernel/build
+            android-kernel/tools
+          key: ${{ runner.os }}-android-kernel-${{ github.event.inputs.android_version }}-${{ github.event.inputs.kernel_version }}-v2
+          restore-keys: |
+            ${{ runner.os }}-android-kernel-${{ github.event.inputs.android_version }}-${{ github.event.inputs.kernel_version }}-
+            ${{ runner.os }}-android-kernel-
+
+      - name: Cache build tools
+        uses: actions/cache@v4
+        id: build-tools-cache
+        with:
+          path: |
+            ~/.cache/bazel
+            /usr/local/bin/repo
+          key: ${{ runner.os }}-build-tools-v2
+          restore-keys: |
+            ${{ runner.os }}-build-tools-
+
       - name: Install repo tool
         run: |
           sudo curl -L https://storage.googleapis.com/git-repo-downloads/repo -o /usr/local/bin/repo
@@ -39,7 +64,7 @@ jobs:
         run: |
           mkdir -p android-kernel && cd android-kernel
           repo init -u https://android.googlesource.com/kernel/manifest -b common-android${{ github.event.inputs.android_version }}-${{ github.event.inputs.kernel_version }}
-          repo sync -j$(nproc) -c --no-tags --optimized-fetch --force-sync
+          repo sync -j$(nproc) -c --no-tags --optimized-fetch --force-sync --no-clone-bundle
 
       - name: Copy kerneldriver
         run: |
@@ -122,7 +147,7 @@ jobs:
           path: |
             android-kernel/${{ env.OUTPUT_PATH }}
             
-      # 新增步骤：准备同步到 Gitee
+      # 准备同步到 Gitee
       - name: Prepare Gitee sync
         run: |
           # 创建用于同步的目录结构
@@ -136,7 +161,7 @@ jobs:
           echo "Target Arch: ${{ github.event.inputs.target_arch }}" >> gitee-sync/VERSION_INFO
           echo "Build Date: $(date)" >> gitee-sync/VERSION_INFO
           
-      # 新增步骤：同步到 Gitee
+      # 同步到 Gitee
       - name: Sync to Gitee
         uses: wearerequired/git-mirror-action@master
         env:
@@ -148,7 +173,7 @@ jobs:
           destination-repo: "git@gitee.com:a34664327/compile_android_driver.git"
           # 只同步 gitee-sync 目录的内容
           source-directory: "gitee-sync"
-          # 推送到 Gitee 的特定分支（可以自定义）
+          # 推送到 Gitee 的特定分支
           destination-branch: "main"
           # 强制推送，覆盖之前的构建
           force: true
