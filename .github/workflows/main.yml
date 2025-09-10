@@ -146,44 +146,4 @@ jobs:
           name: kernel-driver-${{ github.event.inputs.target_arch }}
           path: |
             android-kernel/${{ env.OUTPUT_PATH }}
-            
-      # 准备同步到 Gitee
-      - name: Prepare Gitee sync
-        run: |
-          # 创建用于同步的目录结构
-          mkdir -p gitee-sync/${{ github.event.inputs.android_version }}-${{ github.event.inputs.kernel_version }}/${{ github.event.inputs.target_arch }}
-          # 复制构建产物
-          cp -r android-kernel/${{ env.OUTPUT_PATH }}/* gitee-sync/${{ github.event.inputs.android_version }}-${{ github.event.inputs.kernel_version }}/${{ github.event.inputs.target_arch }}/
-          # 添加版本信息文件
-          echo "Android Version: ${{ github.event.inputs.android_version }}" > gitee-sync/VERSION_INFO
-          echo "Kernel Version: ${{ github.event.inputs.kernel_version }}" >> gitee-sync/VERSION_INFO
-          echo "Driver Name: ${{ github.event.inputs.driver_name }}" >> gitee-sync/VERSION_INFO
-          echo "Target Arch: ${{ github.event.inputs.target_arch }}" >> gitee-sync/VERSION_INFO
-          echo "Build Date: $(date)" >> gitee-sync/VERSION_INFO
           
-      # 配置 Git 安全目录
-      - name: Fix Git Safe Directory
-        run: git config --global --add safe.directory /github/workspace
-
-      # 同步到 Gitee (HTTPS 方式)
-      - name: Sync to Gitee via HTTPS
-        env:
-          GITEE_USERNAME: a34664327
-          GITEE_PASSWORD: 3d8570265fe75ae46b18e659a79b8c20
-        run: |
-          # 配置 Git
-          git config --global user.name "GitHub Actions"
-          git config --global user.email "actions@github.com"
-          
-          cd gitee-sync
-          
-          # 初始化 Git 仓库
-          git init
-          git add .
-          git commit -m "Auto-sync from GitHub Actions - $(date)"
-          git branch -M main
-          
-          # 使用 HTTPS 推送
-          git push -f https://$GITEE_USERNAME:$GITEE_PASSWORD@gitee.com/a34664327/compile_android_driver.git main
-          
-          echo "同步完成!"
